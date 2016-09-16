@@ -27,6 +27,10 @@
       <sprite>sprites\sprPlayerAttackRight</sprite>
       <sprite>sprites\sprHitboxRight</sprite>
       <sprite>sprites\sprCancer</sprite>
+      <sprite>sprites\spr_player_down_test</sprite>
+      <sprite>sprites\spr_player_left_test</sprite>
+      <sprite>sprites\spr_player_up_test</sprite>
+      <sprite>sprites\spr_player_right_test</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy_shroom</sprite>
@@ -61,6 +65,7 @@
     <objects name="Players">
       <object>objects\obj_player</object>
       <object>objects\obj_player_fight</object>
+      <object>objects\obj_player_test</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy_shroom</object>
