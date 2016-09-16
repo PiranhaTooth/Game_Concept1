@@ -59,21 +59,44 @@ left = keyboard_check(ord('A'));
 down = keyboard_check(ord('S'));
 right = keyboard_check(ord('D'));
 sprint = keyboard_check(vk_shift);
+attack = mouse_check_button_pressed(mb_left);
 
 //state machine for movement
 switch (state)
 {
+    case "ATTACK_SWORD_START":
+    {
+        image_speed = 0;
+        vx = 0;
+        vy = 0;
+        timer = 15;
+        //sprite_index = spr_player_attack;
+        state = "ATTACK_SWORD";
+        
+        break;
+    }
+    
+    case "ATTACK_SWORD":
+    {
+        if timer &gt; 0
+        {
+            timer -= 1;
+        }
+        else
+        {
+            state = "IDLE";
+        }
+        
+        break;
+    }
+    
     case "IDLE":
     {
         image_speed = 0;
         vx = 0;
         vy = 0;
         
-        if (up) state = "UP";
-        if (down) state = "DOWN";
-        if (left) state = "LEFT";
-        if (right) state = "RIGHT";
-        if (!up &amp;&amp; !down &amp;&amp; !left &amp;&amp; !right) state = "IDLE";
+        script_execute(scrCheckInput);
         
         break;
     }
@@ -85,12 +108,8 @@ switch (state)
         vx = 0;
         vy = -1 * player_speed;
         
-        if (up) state = "UP";
-        if (down) state = "DOWN";
-        if (left) state = "LEFT";
-        if (right) state = "RIGHT";
-        if (!up &amp;&amp; !down &amp;&amp; !left &amp;&amp; !right) state = "IDLE";
-        
+        script_execute(scrCheckInput);
+
         break;
     }
     case "DOWN":
@@ -101,11 +120,7 @@ switch (state)
         vx = 0;
         vy = player_speed;
         
-        if (up) state = "UP";
-        if (down) state = "DOWN";
-        if (left) state = "LEFT";
-        if (right) state = "RIGHT";
-        if (!up &amp;&amp; !down &amp;&amp; !left &amp;&amp; !right) state = "IDLE";
+        script_execute(scrCheckInput);
         
         break;
     }
@@ -117,12 +132,8 @@ switch (state)
         vx = -1 * player_speed;
         vy = 0;
         
-        if (up) state = "UP";
-        if (down) state = "DOWN";
-        if (left) state = "LEFT";
-        if (right) state = "RIGHT";
-        if (!up &amp;&amp; !down &amp;&amp; !left &amp;&amp; !right) state = "IDLE";
-        
+        script_execute(scrCheckInput);
+
         break;
     }
     case "RIGHT":
@@ -133,12 +144,8 @@ switch (state)
         vx = player_speed;
         vy = 0;
         
-        if (up) state = "UP";
-        if (down) state = "DOWN";
-        if (left) state = "LEFT";
-        if (right) state = "RIGHT";
-        if (!up &amp;&amp; !down &amp;&amp; !left &amp;&amp; !right) state = "IDLE";
-        
+        script_execute(scrCheckInput);
+
         break;
     }
 }

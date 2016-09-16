@@ -42,6 +42,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_movement.gml</script>
+    <script>scripts\scrCheckInput.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Controllers">
@@ -59,9 +60,6 @@
       <object>objects\obj_fireball</object>
     </objects>
     <object>objects\obj_wall</object>
-    <objects name="Misc.">
-      <object>objects\obj_cursor</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
