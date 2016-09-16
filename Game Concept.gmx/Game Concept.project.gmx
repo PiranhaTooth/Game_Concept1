@@ -35,6 +35,7 @@
       <sprite>sprites\sprCursorIdle</sprite>
       <sprite>sprites\sprCursorAttack</sprite>
     </sprites>
+    <sprite>sprites\spr_meme</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_temp</background>
