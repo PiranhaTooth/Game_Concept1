@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//set volume to 50% and play song "floating cities"
+            <string>//set volume to 50% and play one of the songs
 audio_master_gain(0.5);
-audio_play_sound(snd_floating_cities,10,true);
+choose(audio_play_sound(snd_floating_cities,10,true), audio_play_sound(sndThunderbird,10,true));
 </string>
           </argument>
         </arguments>

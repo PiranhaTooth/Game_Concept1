@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_floating_cities</sound>
+    <sound>sound\sndThunderbird</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
