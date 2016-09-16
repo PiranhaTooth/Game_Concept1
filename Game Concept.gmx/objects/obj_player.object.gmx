@@ -70,7 +70,31 @@ switch (state)
         vx = 0;
         vy = 0;
         timer = 15;
-        //sprite_index = spr_player_attack;
+        
+        if sprite_index = spr_player_right
+        {
+            sprite_index = sprPlayerAttackRight;
+            instance_create(x,y,objHitboxRight);
+        }
+        
+        if sprite_index = spr_player_left
+        {
+            sprite_index = sprPlayerAttackLeft;
+            instance_create(x,y,objHitboxLeft);
+        }
+        
+        if sprite_index = spr_player_up
+        {
+            sprite_index = sprPlayerAttackUp;
+            instance_create(x,y,objHitboxUp);
+        }
+        
+        if sprite_index = spr_player_down
+        {
+            sprite_index = sprPlayerAttackDown;
+            instance_create(x,y,objHitboxDown);
+        }
+        
         state = "ATTACK_SWORD";
         
         break;

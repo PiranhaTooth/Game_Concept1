@@ -15,9 +15,18 @@
       <sprite>sprites\spr_player_down</sprite>
       <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_idle_up</sprite>
+      <sprite>sprites\sprPlayerAttackUp</sprite>
+      <sprite>sprites\sprHitboxUp</sprite>
       <sprite>sprites\spr_player_idle_down</sprite>
+      <sprite>sprites\sprPlayerAttackDown</sprite>
+      <sprite>sprites\sprHitboxDown</sprite>
       <sprite>sprites\spr_player_idle_left</sprite>
+      <sprite>sprites\sprPlayerAttackLeft</sprite>
+      <sprite>sprites\sprHitboxLeft</sprite>
       <sprite>sprites\spr_player_idle_right</sprite>
+      <sprite>sprites\sprPlayerAttackRight</sprite>
+      <sprite>sprites\sprHitboxRight</sprite>
+      <sprite>sprites\sprCancer</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy_shroom</sprite>
@@ -60,6 +69,12 @@
       <object>objects\obj_fireball</object>
     </objects>
     <object>objects\obj_wall</object>
+    <objects name="Misc.">
+      <object>objects\objHitboxRight</object>
+      <object>objects\objHitboxLeft</object>
+      <object>objects\objHitboxDown</object>
+      <object>objects\objHitboxUp</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
