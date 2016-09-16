@@ -108,6 +108,11 @@ switch (state)
         }
         else
         {
+            if (sprite_index = sprPlayerAttackRight) sprite_index = spr_player_right;
+            if (sprite_index = sprPlayerAttackLeft) sprite_index = spr_player_left;
+            if (sprite_index = sprPlayerAttackUp) sprite_index = spr_player_up;
+            if (sprite_index = sprPlayerAttackDown) sprite_index = spr_player_down;
+            
             state = "IDLE";
         }
         
