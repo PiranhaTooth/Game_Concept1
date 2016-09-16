@@ -46,15 +46,16 @@
   </scripts>
   <objects name="objects">
     <objects name="Controllers">
-      <object>objects\obj_controller</object>
-      <object>objects\obj_camera</object>
+      <object>objects\objMouse</object>
+      <object>objects\objController</object>
+      <object>objects\objCamera</object>
     </objects>
     <objects name="Players">
-      <object>objects\obj_player</object>
-      <object>objects\obj_player_fight</object>
+      <object>objects\objPlayer</object>
+      <object>objects\objPlayerFight</object>
     </objects>
     <objects name="Enemies">
-      <object>objects\obj_enemy_shroom</object>
+      <object>objects\objEnemyShroom</object>
     </objects>
     <objects name="Weapons">
       <object>objects\obj_fireball</object>
