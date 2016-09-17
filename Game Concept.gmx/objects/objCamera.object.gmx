@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var x_to, y_to;
+            <string>/*var x_to, y_to;
 move_towards_point(mouse_x,mouse_y,0);
 x_to = objPlayer.x + lengthdir_x(min(96, distance_to_point(mouse_x,mouse_y)), direction);
 y_to = objPlayer.y + lengthdir_y(min(96, distance_to_point(mouse_x,mouse_y)), direction);
@@ -37,7 +37,7 @@ view_xview = -(view_wview/2) + x;
 view_yview = -(view_hview/2) + y;
 
 view_xview = clamp(view_xview,0,room_width-view_wview);
-view_yview = clamp(view_yview,0,room_width-view_hview);
+view_yview = clamp(view_yview,0,room_width-view_hview);*/
 </string>
           </argument>
         </arguments>

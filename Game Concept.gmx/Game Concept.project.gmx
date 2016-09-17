@@ -15,9 +15,22 @@
       <sprite>sprites\spr_player_down</sprite>
       <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_idle_up</sprite>
+      <sprite>sprites\sprPlayerAttackUp</sprite>
+      <sprite>sprites\sprHitboxUp</sprite>
       <sprite>sprites\spr_player_idle_down</sprite>
+      <sprite>sprites\sprPlayerAttackDown</sprite>
+      <sprite>sprites\sprHitboxDown</sprite>
       <sprite>sprites\spr_player_idle_left</sprite>
+      <sprite>sprites\sprPlayerAttackLeft</sprite>
+      <sprite>sprites\sprHitboxLeft</sprite>
       <sprite>sprites\spr_player_idle_right</sprite>
+      <sprite>sprites\sprPlayerAttackRight</sprite>
+      <sprite>sprites\sprHitboxRight</sprite>
+      <sprite>sprites\sprCancer</sprite>
+      <sprite>sprites\spr_player_down_test</sprite>
+      <sprite>sprites\spr_player_left_test</sprite>
+      <sprite>sprites\spr_player_up_test</sprite>
+      <sprite>sprites\spr_player_right_test</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy_shroom</sprite>
@@ -43,6 +56,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_movement.gml</script>
+    <script>scripts\scrCheckInput.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Controllers">
@@ -51,8 +65,14 @@
       <object>objects\objCamera</object>
     </objects>
     <objects name="Players">
+<<<<<<< HEAD
       <object>objects\objPlayer</object>
       <object>objects\objPlayerFight</object>
+=======
+      <object>objects\obj_player</object>
+      <object>objects\obj_player_fight</object>
+      <object>objects\obj_player_test</object>
+>>>>>>> refs/remotes/Adure/master
     </objects>
     <objects name="Enemies">
       <object>objects\objEnemyShroom</object>
@@ -62,7 +82,10 @@
     </objects>
     <object>objects\obj_wall</object>
     <objects name="Misc.">
-      <object>objects\obj_cursor</object>
+      <object>objects\objHitboxRight</object>
+      <object>objects\objHitboxLeft</object>
+      <object>objects\objHitboxDown</object>
+      <object>objects\objHitboxUp</object>
     </objects>
   </objects>
   <rooms name="rooms">
